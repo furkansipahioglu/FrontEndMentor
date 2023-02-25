@@ -1,0 +1,213 @@
+:root {
+    --lightred: hsl(0, 100%, 67%);
+    --orange: hsl(39, 100%, 56%);
+    --green:hsl(166, 100%, 37%);
+    --blue:hsl(234, 85%, 45%);
+    
+    --white: hsl(0, 0%, 100%);
+    --paleblue: hsl(221, 100%, 96%);
+    --lightlavender: hsl(241, 100%, 89%);
+    --darkgrayblue: hsl(224, 30%, 27%);
+  }
+
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+    font-size: 15px;
+}
+body{
+    background-color: var(--white);
+}
+.container{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 420px;
+}
+.left{
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.container{
+    border-radius: 20px;
+    background: var(--white);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.point{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 0) 100%);
+    
+}
+.left h2{
+    opacity: 0.6;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.left .point h1{
+    font-size: 48px;
+    font-weight:800;
+    z-index: 1;
+}
+.left .point span{
+    opacity: 0.5;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: none;
+    font-size: 12px;
+}
+.left h1{
+    font-size: 22px;
+    font-weight: 500;
+}
+.left h3{
+    margin-bottom: 20px;
+    width: 60%;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.6;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    align-items: center;
+    flex: 1;
+}
+.right h2{
+    font-size: 20px;
+    font-weight: 800;
+    width: 80%;
+    align-self: left;
+}
+.right h3 , span {
+    font-size: 14px;
+}
+svg{
+    width: 18px;
+    height: 18px;
+}
+.pointGroup1, .pointGroup2, .pointGroup3, .pointGroup4{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    width: 80%;
+    height: 40px;
+    justify-content: space-around;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.pointGroup1 span, .pointGroup2 span, .pointGroup3 span, .pointGroup4 span {
+    opacity: 0.6;
+}
+.groupLeft{
+    display: flex;
+    width: 60%;
+}
+.groupLeft h3{
+    margin-left: 5px;
+} 
+.pointGroup1{
+    background-color: hsl(0, 100%, 67%,0.15);
+    
+}
+.pointGroup2{
+    background-color: hsl(39, 100%, 56%,0.15);
+    
+}
+.pointGroup3{
+    background-color: hsl(166, 100%, 37%,0.2);
+    
+}
+.pointGroup4{
+    background-color: hsl(234, 85%, 45%,0.2);  
+}
+
+.pointGroup1 .groupLeft h3{
+    color: hsl(0, 100%, 67%);
+    
+}
+.pointGroup2 .groupLeft h3{
+    color: hsl(39, 100%, 56%);
+    
+}
+.pointGroup3 .groupLeft h3{
+    color: hsl(166, 100%, 37%);
+    
+}
+.pointGroup4 .groupLeft h3{
+    color: hsl(234, 85%, 45%);  
+}
+.button{
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+    height: 50px;
+    color: var(--white);
+    background: var(--darkgrayblue);
+    
+    
+}
+.button:hover{
+    background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%); 
+    
+}
+
+@media screen and (max-width: 375px) {
+    .container{
+        display: flex;
+        width: 100%;
+        height: 630px;
+        flex-direction: column;
+    }
+    .pointGroup1, .pointGroup2, .pointGroup3, .pointGroup4{
+        margin-top: 10px;
+    }
+    .button{
+        margin: 25px 0px 25px 0px ;
+    }
+    .right{
+        margin-top: 15px;
+    }
+    .left{
+        border-radius: 0px 0px 20px 20px;
+        -webkit-border-radius: 0px 0px 20px 20px;
+        -moz-border-radius: 0px 0px 20px 20px;
+        -ms-border-radius: 0px 0px 20px 20px;
+        -o-border-radius: 0px 0px 20px 20px;
+}
+}
