@@ -5,3 +5,7 @@
 ## 1.QR Code Component
 
 https://qr-code-component-12.netlify.app/
+
+## 2.Results Summary Component
+
+https://results-summary-component12.netlify.app/
