@@ -10,6 +10,6 @@ https://qr-code-component-12.netlify.app/
 
 https://results-summary-component12.netlify.app/
 
-## 3.Advice Generator Using Api Component
+## 3.Advice Generator Using Api Component(React)
 
 https://advice-generator-12.netlify.app/
