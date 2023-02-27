@@ -1,8 +1,8 @@
 # FrontEndMentor
 
-#### Front End Mentor Website Challange Solutions
+### Front End Mentor Website Challange Solutions
 
-### Note:Some of them responsive under 375px
+#### Note:Some of them responsive under 375px
 
 ## 1.QR Code Component
 
