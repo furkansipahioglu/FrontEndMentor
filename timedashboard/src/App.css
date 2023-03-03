@@ -1,0 +1,243 @@
+:root {
+  --Blue: hsl(246, 80%, 60%);
+  --Lightred1: hsl(15, 100%, 70%);
+  --Softblue: hsl(195, 74%, 62%);
+  --Lightred: hsl(348, 100%, 68%);
+  --Limegreen: hsl(145, 58%, 55%);
+  --Violet: hsl(264, 64%, 52%);
+  --Softorange: hsl(43, 84%, 65%);
+
+  --Verydarkblue: hsl(226, 43%, 10%);
+  --Darkblue: hsl(235, 46%, 20%);
+  --Desaturatedblue: hsl(235, 45%, 61%);
+  --PaleBlue: hsl(236, 100%, 87%);
+ 
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+body{
+  background-color: var(--Verydarkblue);
+}
+.container{
+  position: absolute;
+  display: flex; 
+  background-color: var(--DarkGrayishBlue);
+  border-radius: 20px;
+  width: 1250px;
+  height:500px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.personInfo .top, .personInfo .top .elements{
+  display:flex;
+  flex-direction: column;
+}
+.personInfo .bottom{
+  flex: 1;
+}
+.personInfo .top{
+  justify-content: space-evenly;
+  background-color: var(--Blue);
+  border-radius: 20px;
+  flex: 2.5;
+  align-items: center;
+  color: white;
+}
+.personInfo .top img{
+  border:2px solid white;
+  border-radius: 100%;
+  margin-bottom: 50px;
+  height: 90px;
+  width: 90px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.elements {
+  display: flex;
+  justify-content: center;
+  height: 80%;
+  width: 70%;
+}
+.elements span {
+  opacity: .5;
+}
+.elements h1  {
+  
+  font-size: 44px;
+  font-weight: 300;
+}
+.bottomelements{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80%;
+  width: 70%;
+}
+.bottomelements p{
+  cursor:pointer;
+  transition: 0.3s all ease-in;
+  -webkit-transition: 0.3s all ease-in;
+  -moz-transition: 0.3s all ease-in;
+  -ms-transition: 0.3s all ease-in;
+  -o-transition: 0.3s all ease-in;
+}
+.bottomelements p:hover{
+  color: white;
+}
+.active{
+  color: white;
+}
+.personInfo{
+  flex: 1;
+  background-color: var(--Darkblue);
+  border-radius:20px;
+  display: flex;
+  flex-direction: column;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  -ms-border-radius:20px;
+  -o-border-radius:20px;
+}
+.bottom{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: rgb(255, 255, 255,0.5);
+}
+.planner{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex: 3;
+  margin-left: 40px;
+}
+.planner .background{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  height: 40%;
+  width: 30%;
+  margin-bottom: 4%;
+  border-radius: 20px;
+  background-color: var(--Lightred1);
+ 
+}
+.Info{
+  display: flex;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 35px;
+  border-radius: 20px;
+  background-color: var(--Darkblue);
+  position: absolute;
+  cursor: pointer;
+  transition: 0.2s all ease;
+  -webkit-transition: 0.2s all ease;
+  -moz-transition: 0.2s all ease;
+  -ms-transition: 0.2s all ease;
+  -o-transition: 0.2s all ease;
+}
+.Info:hover{
+  filter: brightness(150%);
+}
+.InfoContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly ;
+  height: 100%;
+  width: 80%;
+}
+.background img{
+  width: 70px;
+  height: 70px;
+}
+.InfoContainer h2 {
+  font-size: 50px;
+  font-weight: 300;
+}
+.InfoContainer h2 p{
+  font-size: 14px;
+  font-weight: 400;
+  opacity: .5;
+  padding-top: 20px;
+}
+.InfoContainer h3{
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .container{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-80%);
+    width: 350px;
+    flex-direction: column;
+    -webkit-transform: translate(-50%,-80%);
+    -moz-transform: translate(-50%,-80%);
+    -ms-transform: translate(-50%,-80%);
+    -o-transform: translate(-50%,-80%);
+}
+  .personInfo .top .elements{
+    height: 145px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+ 
+  .bottom .bottomelements{
+    height: 65px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .personInfo .top .elements h1{
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .elements span{
+    text-align: center;
+  }
+  .personInfo .top img{
+    margin-bottom: 0;
+  }
+  .planner{
+    margin-top: 20px;
+    margin-left: 0;
+    gap: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .planner .background{
+    margin: 0;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 0px;
+  }
+  .InfoContainer h2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .InfoContainer h2 p{
+    padding: 0;
+  }
+  
+
+}
