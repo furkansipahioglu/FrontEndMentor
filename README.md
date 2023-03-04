@@ -25,3 +25,7 @@ https://perfumeproduct.netlify.app/
 https://time-tracking-react.netlify.app/
 
 Note:Data fetched from local JSON file
+
+## 6.FAQ Accordion Card Component
+
+https://faq-accordion-card12.netlify.app/
