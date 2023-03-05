@@ -29,3 +29,14 @@ Note:Data fetched from local JSON file
 ## 6.FAQ Accordion Card Component
 
 https://faq-accordion-card12.netlify.app/
+
+## 7.Interactive Rating Component
+
+https://interactive-rating-component12.netlify.app/
+
+
+
+
+
+
+
