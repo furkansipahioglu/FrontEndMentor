@@ -34,6 +34,10 @@ https://faq-accordion-card12.netlify.app/
 
 https://interactive-rating-component12.netlify.app/
 
+## 8.Tip Calculator Component
+
+https://tip-calculator-front.netlify.app/
+
 
 
 
